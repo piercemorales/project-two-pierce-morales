@@ -1,0 +1,300 @@
+@import "colors";
+@import "generalstyle";
+
+.genflexContainer {
+  height: 80vh;
+  margin-top: 200px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+ .generalInfoText {
+    display: flex;
+    flex-direction: row;
+    min-width: 300px;
+    width: 50%;
+    margin-top: 30px;
+    line-height: 2rem;
+      i {
+        background-color: $shadowColor;
+        color: $innertextColor;
+        margin-right: 20px;
+        padding: 10px;
+        height: 40px;
+        border-radius: 50%;
+      }
+      p {
+        max-width: 90%;
+      }
+  }
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+// FEATURED MENU CONTENT BEGINS
+
+  .menuItems {
+  background-color: $secondaryColor;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 50px;
+
+}
+.menuOption {
+  display: flex;
+}
+// LEFT SECTION BURGURRRRRSSS
+
+.menuOptionleft {
+}
+.leftTing {
+  top:-30px;
+  box-shadow: 20px 20px $shadowColor;
+}
+
+.trySomethingNew {
+  margin-left: 10%;
+  margin-top: 50px;
+  text-align: right;
+}
+
+.trySomethingNew, .bestBurgersText {
+  height: 300px;
+  h2 {
+    font-size: 2.5rem;
+    margin:0;
+    line-height: 58px;
+  }
+  p {
+    font-family: 'Barlow', sans-serif;
+    line-height: 28px;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+  }
+  a {
+    // UNEVEN PADDING ON FONT SO I USED SPECIFIC PADDING TO EVEN IT
+    color: $innertextColor;
+    background-color: $shadowColor;
+    
+  }
+}
+
+.menuOptionleft img, .menuOptionright img {
+  height: auto;
+  width: 100%;
+  position: relative;
+  object-fit: cover;
+}
+
+// TRY SOMETHING NEWWWW SECTION BEGINS BOTTOM SIDE
+
+.menuOptionright, .menuOptionleft {
+  width: 45%;
+}
+.menuOptionright {
+  align-items: flex-start;
+}
+.bestBurgersText {
+  margin-right: 15%;
+    margin-top: 80px;
+}
+
+.rightTing {
+  top: 100px;
+  box-shadow: -20px 20px $shadowColor;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.giveContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2 {
+    text-transform: uppercase;
+    color: $shadowColor;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 2.25rem;
+    line-height: 4.5rem;
+  }
+  p {
+    line-height: 2rem;
+    max-width: 70%;
+  }
+  a {
+    margin: 20px;
+  }
+}
+
+.midSectionImage {
+  background-image: url(../images/banner.jpg);
+  // background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+
+.natureContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  // flex-wrap: wrap;
+
+  width: 100%;
+  img {
+      box-shadow: -15px 15px 0px 5px $shadowColor;
+      margin-right: 30px;
+
+      height: 300px;
+      max-width: 305px;
+
+    }
+}
+
+.natureText {
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 65%;
+  
+    h2 {
+    text-transform: uppercase;
+    color: $shadowColor;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 2.25rem;
+    }
+    
+}
+
+.galleryImages {
+  background-color: $secondaryColor;
+}
+.galleryContent {
+  ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+  }
+  li {
+  width: calc(33% - (4% / 3));
+  min-width: 200px;
+   
+  }
+  img {  
+  width: 100%;
+  }
+}
+
+.footerText {
+  background-color: #0F0F0F;
+
+  p {
+    text-align: center;
+    padding: 10px;
+  }
+}
+
+
+
+
+
+
+// BLOG HTML STARTS HEREE
+.blogFlex {
+  display: flex;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+.blogmainFlex {
+  
+
+  .blogSubHead {
+    margin-left: 25%;
+    padding: 20px;
+    background-color: $secondaryColor;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    color: $shadowColor;
+  }
+
+  li {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  a {
+   text-transform: lowercase;
+    font-weight: 300;
+   font-size: 1.2rem;
+   transition: 0.2s ease-in-out;
+   &:hover {
+     color: $shadowColor;
+   }
+  }
+
+  aside {
+    width: 30%;
+    
+
+    img {
+      width: 100%;
+      display: block;
+      box-shadow: 40px 20px 0 -20px $secondaryColor;
+
+    }
+
+    .blogSubHead {
+    box-shadow: 20px 0px $secondaryColor;
+
+    }
+  }
+  .employmentRight {
+    width: calc(70% - 110px);
+    margin-left: 110px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    .blogImage {
+      position: absolute;
+      margin-bottom: 5%;
+      top:-400px;
+      right:0;
+
+        img {
+        width: 100%;
+        display: block;
+      // box-shadow: -20px 20px $shadowColor;
+      }
+    }
+
+  }
+
+}
