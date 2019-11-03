@@ -1,5 +1,6 @@
 @import "colors";
 @import "generalstyle";
+@import "footer";
 
 .genflexContainer {
   height: 80vh;
@@ -51,8 +52,6 @@
 }
 // LEFT SECTION BURGURRRRRSSS
 
-.menuOptionleft {
-}
 .leftTing {
   top:-30px;
   box-shadow: 20px 20px $shadowColor;
@@ -110,19 +109,6 @@
   box-shadow: -20px 20px $shadowColor;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .giveContainer {
   display: flex;
@@ -209,16 +195,6 @@
   }
 }
 
-.footerText {
-  background-color: #0F0F0F;
-
-  p {
-    text-align: center;
-    padding: 10px;
-  }
-}
-
-
 
 
 
@@ -229,7 +205,7 @@
   width: 100%;
   max-width: 1600px;
   margin: 0 auto;
-  padding-top: 100px;
+  padding-top: 150px;
 }
 .blogmainFlex {
   
@@ -275,26 +251,54 @@
 
     }
   }
-  .employmentRight {
+}
+
+.employmentRight {
     width: calc(70% - 110px);
     margin-left: 110px;
     display: flex;
     flex-direction: column;
     position: relative;
+    padding: 400px 60px 60px 60px;
 
+    
     .blogImage {
       position: absolute;
       margin-bottom: 5%;
-      top:-400px;
+      top:-300px;
       right:0;
-
         img {
         width: 100%;
         display: block;
-      // box-shadow: -20px 20px $shadowColor;
+      box-shadow: -10px 10px $shadowColor;
       }
     }
+  }
+
+  .employmentText {
+      box-shadow: 10px 10px $shadowColor;
+      padding: 0 50px 100px 0;
+      margin-bottom: 100px;
+
+    h2 {
+      color: $shadowColor;
+    }
+
+    p:nth-of-type(1) {
+      font-weight: 600;
+    }
+    p {
+      margin: 20px 0;
+    }
+  }
+
+
+  .testimonialSec {
 
   }
 
-}
+  .customerComments {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+  }
