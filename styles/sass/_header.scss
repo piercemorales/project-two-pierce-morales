@@ -31,8 +31,9 @@
   left: -30px;
   font-weight: lighter;
   text-transform: uppercase;
-  font-size: 3.45rem;
+  font-size: 3rem;
   width: 20%;
+  z-index: 10;
     span {
       display: inline-block;
       background: #fff;
@@ -55,15 +56,14 @@
   margin:50px 0 100px 0; 
   li {
     padding: 10px;
-    a {
-    }
-  }
   }
 }
 
 header img {
   position: absolute;
   right: 0; 
+  width: 45%;
   bottom: -100px;
  z-index: 0;
+}
 }

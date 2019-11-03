@@ -295,8 +295,9 @@ h1 {
   left: -30px;
   font-weight: lighter;
   text-transform: uppercase;
-  font-size: 3.45rem;
+  font-size: 3rem;
   width: 20%;
+  z-index: 10;
 }
 
 .headerTitle span {
@@ -330,9 +331,10 @@ h1 {
   padding: 10px;
 }
 
-header img {
+.headerNav header img {
   position: absolute;
   right: 0;
+  width: 45%;
   bottom: -100px;
   z-index: 0;
 }
@@ -787,7 +789,68 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  margin: 50px 0;
+}
+
+.customerComments .commentDate {
+  font-weight: 500;
+  color: #FFD300;
+}
+
+.customerComments .commentImage {
+  display: block;
+  margin-right: 20px;
+}
+
+.customerComments .commentImage img {
+  padding-top: 10px;
+}
+
+.userInput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.userInput input:nth-of-type(1) {
+  margin-left: 0;
+}
+
+.userInput input:nth-of-type(2) {
+  margin-right: 0;
+}
+
+.userInput input {
+  width: calc(50% - 20px);
+  margin: 20px 10px 30px 10px;
+  color: #fff;
   padding: 20px;
+  border: none;
+  border-bottom: 2px solid #FFD300;
+  background-color: #2B331B;
+}
+
+textarea {
+  background-color: #2B331B;
+  border: solid 2px #FFD300;
+  color: #fff;
+  outline: none;
+  resize: none;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+button {
+  width: 100%;
+  text-transform: uppercase;
+  padding: 15px 0 11px 0;
+  text-align: center;
+  background-color: #FFD300;
+  border: #FFD300;
 }
 
 .footerText {
