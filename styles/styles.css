@@ -287,6 +287,7 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
   height: 90vh;
+  min-height: 600px;
   margin: 0 auto;
 }
 
@@ -513,10 +514,6 @@ h1 {
   margin-left: 10%;
   margin-top: 50px;
   text-align: right;
-}
-
-.trySomethingNew, .bestBurgersText {
-  height: 300px;
 }
 
 .trySomethingNew h2, .bestBurgersText h2 {
@@ -851,6 +848,10 @@ button {
   text-align: center;
   background-color: #FFD300;
   border: #FFD300;
+}
+
+.contactBG {
+  background-position: 80%;
 }
 
 .contactBG .headerTitle {
