@@ -878,6 +878,19 @@ button {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  width: 50%;
+}
+
+.contactSection ul li {
+  margin-right: 20px;
+}
+
+.contactSection ul li a {
+  color: #FFD300;
+}
+
+.contactSection .contactEmail {
+  padding: 20px 0;
 }
 
 .contactInfo {
