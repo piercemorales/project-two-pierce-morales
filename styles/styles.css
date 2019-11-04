@@ -331,7 +331,7 @@ h1 {
   padding: 10px;
 }
 
-.headerNav header img {
+header img {
   position: absolute;
   right: 0;
   width: 45%;
@@ -430,7 +430,7 @@ h1 {
 }
 
 .genflexContainer {
-  height: 80vh;
+  padding-bottom: 100px;
   margin-top: 200px;
   margin-bottom: 50px;
   display: -webkit-box;
@@ -847,10 +847,57 @@ textarea {
 button {
   width: 100%;
   text-transform: uppercase;
-  padding: 15px 0 11px 0;
+  padding: 15px 0 10px 0;
   text-align: center;
   background-color: #FFD300;
   border: #FFD300;
+}
+
+.contactBG .headerTitle {
+  width: 100%;
+  left: 0;
+}
+
+.contactSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.contactSection ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.contactInfo {
+  margin-top: 100px;
+  width: 30%;
+}
+
+.formContact {
+  width: 70%;
+  -webkit-box-shadow: 15px 15px #FFD300;
+          box-shadow: 15px 15px #FFD300;
+  background-color: #171B0E;
+  padding: 50px;
+  top: -200px;
+  position: relative;
+  right: -50px;
+}
+
+.formContact input, .formContact textarea {
+  background-color: #171B0E;
 }
 
 .footerText {

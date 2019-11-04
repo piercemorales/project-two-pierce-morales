@@ -3,7 +3,7 @@
 @import "footer";
 
 .genflexContainer {
-  height: 80vh;
+  padding-bottom: 100px;
   margin-top: 200px;
   margin-bottom: 50px;
   display: flex;
@@ -199,7 +199,7 @@
 
 
 
-// BLOG HTML STARTS HEREE
+// BLOG HTML STARTS HEREE 
 .blogFlex {
   display: flex;
   width: 100%;
@@ -297,8 +297,6 @@
     flex-direction: row;
       margin: 50px 0;
 
-
-
     .commentDate {
       font-weight: 500;
       color: $shadowColor;
@@ -348,8 +346,53 @@
     button {
       width: 100%;
       text-transform: uppercase;
-      padding: 15px 0 11px 0;
+      padding: 15px 0 10px 0;
       text-align: center;
       background-color: $shadowColor;
       border: $shadowColor;
     }
+// BLOG HTML ENDS HERE-------------------------
+// ------------------------------------------------
+// ----------------------------------------------
+
+//CONTACT HTML BEGINS HERE
+// ------------------------------------------------
+// ------------------------------------------------
+//------------------------------------------------
+
+.contactBG {
+  .headerTitle {
+    width: 100%;
+    left: 0;
+  }
+}
+
+.contactSection {
+  display: flex;
+  flex-direction: row;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.contactInfo {
+  margin-top: 100px;
+  width:30%;
+}
+
+.formContact {
+  width: 70%;
+  box-shadow: 15px 15px $shadowColor;
+  background-color: $secondaryColor;
+  padding: 50px;
+  top: -200px;
+  position: relative;
+  right: -50px;
+
+  input,textarea {
+    background-color: $secondaryColor;
+  }
+}
+
