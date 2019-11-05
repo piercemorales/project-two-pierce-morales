@@ -10,6 +10,18 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-content: center;
+  @include mq-mobile {
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    .generalInfoText {
+      width: 100%;
+      p {
+        max-width: 100%;
+      }
+    }
+  }
 }
  .generalInfoText {
     display: flex;
@@ -45,6 +57,15 @@
   flex-wrap: wrap;
   justify-content: space-between;
   padding-bottom: 50px;
+  @include mq-mobile {
+    flex-direction: column;
+    .menuOptionright {
+    order: 2
+    }
+    .leftTing {
+      order
+    }
+  }
 
 }
 .menuOption {
@@ -156,8 +177,15 @@
   flex-direction: row;
   justify-content: space-between;
   // flex-wrap: wrap;
-
   width: 100%;
+
+  @include mq-mobile {
+      flex-direction: column;
+      max-width: 90%;
+      img {
+
+      }
+  } 
   img {
       box-shadow: -15px 15px 0px 5px $shadowColor;
       margin-right: 30px;
@@ -167,7 +195,11 @@
       @include mq-tablet{
         height: 200px;
       }
+      @include mq-mobile {
+      height: 100%;
+      margin: 0 auto 50px auto;
 
+      }
     }
 }
 
@@ -177,6 +209,9 @@
   align-items: flex-start;
   justify-content: space-between;
   width: 65%;
+  @include mq-mobile {
+    width: 100%;
+  }
   
     h2 {
     text-transform: uppercase;
@@ -197,7 +232,14 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    
+    @include mq-mobile {
+      flex-direction: column;
+      align-items: center;
+      li {
+        width: 70%;
+        margin: 20px auto;
+      }
+    }
   }
   li {
   width: calc(33% - (4% / 3));

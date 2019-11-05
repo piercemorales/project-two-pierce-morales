@@ -39,6 +39,16 @@
       display: none;
     }
   }
+  @include mq-mobile {
+    background-position:10%;
+
+    h1 {
+    font-size: 3rem;
+    top: -50px;
+    position: relative;
+
+    }
+  }
 }
 
 .headerTitle {
