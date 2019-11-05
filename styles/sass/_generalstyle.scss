@@ -76,6 +76,21 @@ h1 {
   color: #fff; 
   background-color: #0F0F0F;
   padding: 10px;
+  transition: .2s ease-in-out;
+  &:hover {
+    background-color: $primaryColor;
+    box-shadow: 0 5px $shadowColor;
+  }
+}
+
+.readMoreBtn {
+  transition: .2s ease-in-out;
+
+  &:hover {
+    background-color: $secondaryColor; 
+    color: #fff;
+    box-shadow: 0 5px $shadowColor;
+  }
 }
 
 .findBtn, .readMoreBtn {
@@ -83,4 +98,3 @@ h1 {
     display: inline-block;
     text-transform: uppercase;
 }
-

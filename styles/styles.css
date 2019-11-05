@@ -258,6 +258,26 @@ h1 {
   color: #fff;
   background-color: #0F0F0F;
   padding: 10px;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+.findBtn:hover {
+  background-color: #2B331B;
+  -webkit-box-shadow: 0 5px #FFD300;
+          box-shadow: 0 5px #FFD300;
+}
+
+.readMoreBtn {
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+.readMoreBtn:hover {
+  background-color: #171B0E;
+  color: #fff;
+  -webkit-box-shadow: 0 5px #FFD300;
+          box-shadow: 0 5px #FFD300;
 }
 
 .findBtn, .readMoreBtn {
@@ -473,6 +493,26 @@ h1 {
   color: #fff;
   background-color: #0F0F0F;
   padding: 10px;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+.findBtn:hover {
+  background-color: #2B331B;
+  -webkit-box-shadow: 0 5px #FFD300;
+          box-shadow: 0 5px #FFD300;
+}
+
+.readMoreBtn {
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+.readMoreBtn:hover {
+  background-color: #171B0E;
+  color: #fff;
+  -webkit-box-shadow: 0 5px #FFD300;
+          box-shadow: 0 5px #FFD300;
 }
 
 .findBtn, .readMoreBtn {
@@ -1190,6 +1230,13 @@ h1 {
   padding-bottom: 50px;
 }
 
+.blogForm button:hover {
+  background-color: #2B331B;
+  -webkit-box-shadow: 0 5px #FFD300;
+          box-shadow: 0 5px #FFD300;
+  color: #fff;
+}
+
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   opacity: 1;
 }
@@ -1224,6 +1271,8 @@ button {
   text-align: center;
   background-color: #FFD300;
   border: #FFD300;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .contactBG {
@@ -1371,6 +1420,13 @@ button {
   top: -200px;
   position: relative;
   right: -50px;
+}
+
+.formContact button:hover {
+  color: #fff;
+  background-color: #171B0E;
+  -webkit-box-shadow: 0 5px #FFD300;
+          box-shadow: 0 5px #FFD300;
 }
 
 .formContact input, .formContact textarea {

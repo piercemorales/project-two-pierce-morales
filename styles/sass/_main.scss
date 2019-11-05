@@ -346,6 +346,7 @@
    transition: 0.2s ease-in-out;
    &:hover {
      color: $shadowColor;
+     
    }
   }
 
@@ -514,6 +515,14 @@
  
   .blogForm {
     padding-bottom: 50px;
+    button {
+      
+      &:hover {
+        background-color: $primaryColor;
+    box-shadow: 0 5px $shadowColor;
+        color: #fff;
+      }
+    }
   }
 
  input::placeholder, textarea::placeholder {
@@ -539,6 +548,7 @@
       text-align: center;
       background-color: $shadowColor;
       border: $shadowColor;
+      transition: 0.2s ease-in-out;
     }
 // BLOG HTML ENDS HERE-------------------------
 // ------------------------------------------------
@@ -646,6 +656,15 @@
   top: -200px;
   position: relative;
   right: -50px;
+
+  button {
+    &:hover {
+      color: #fff;
+      background-color: $secondaryColor;
+    box-shadow: 0 5px $shadowColor;
+
+    }
+  }
 
   input,textarea {
     background-color: $secondaryColor;
