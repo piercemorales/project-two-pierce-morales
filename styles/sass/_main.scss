@@ -55,17 +55,25 @@
 .leftTing {
   top:-30px;
   box-shadow: 20px 20px $shadowColor;
+  @include mq-tablet {
+    top: 0;
+  }
 }
 
 .trySomethingNew {
   margin-left: 10%;
   margin-top: 50px;
   text-align: right;
+  @include mq-tablet {
+    text-align: left;
+  }
+ 
 }
 
 .trySomethingNew, .bestBurgersText {
+  
   h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin:0;
     line-height: 58px;
   }
@@ -101,6 +109,10 @@
 .bestBurgersText {
   margin-right: 15%;
     margin-top: 80px;
+  @include mq-tablet {
+    margin-top: 20px;
+    margin-right: 5%;
+  }
 }
 
 .rightTing {
@@ -152,6 +164,9 @@
 
       height: 300px;
       max-width: 305px;
+      @include mq-tablet{
+        height: 200px;
+      }
 
     }
 }
@@ -204,7 +219,17 @@
   width: 100%;
   max-width: 1600px;
   margin: 0 auto;
-  padding-top: 150px;
+  @include mq-tablet {
+    flex-direction: column;
+
+
+    .employmentText, .testimonialSec, .blogForm {
+      max-width: 80%;
+      margin:0 auto 50px auto;
+      padding:0;
+    }
+
+  }
 }
 .blogmainFlex {
   
@@ -236,6 +261,23 @@
 
   aside {
     width: 30%;
+  padding-top: 150px;
+  margin-bottom: 50px;
+  @include mq-tablet {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    order: 2;
+    .blogSubHead {
+      margin: 0;
+    text-align: center;
+
+    li {
+      list-style: none;
+    }
+
+    }
+  }
     
 
     img {
@@ -247,6 +289,13 @@
 
     .blogSubHead {
     box-shadow: 20px 0px $secondaryColor;
+    h3 {
+      margin: 10px  0;
+    }
+    a {
+    font-family: 'Barlow', sans-serif;
+    text-align: left;
+    }
 
     }
   }
@@ -258,16 +307,18 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    padding: 400px 60px 60px 60px;
-
-    // @media max-width(1400px) {
-      
-    // }
-    
+      @include mq-tablet {
+        width: 100%;
+        margin: 0;
+        .blogImage img{
+          height: 50vw;
+          object-fit: cover;
+        }
+      }  
     .blogImage {
-      position: absolute;
+      position: relative;
       margin-bottom: 5%;
-      top:-300px;
+      top:-100px;
       right:0;
         img {
         width: 100%;
@@ -280,7 +331,7 @@
   .employmentText {
       box-shadow: 10px 10px $shadowColor;
       padding: 0 50px 100px 0;
-      margin-bottom: 100px;
+      margin: 0 60px 100px 60px;
 
     h2 {
       color: $shadowColor;
@@ -294,10 +345,14 @@
     }
   }
 
+  .testimonialSec, .blogForm {
+    margin: 50px 0 0 60px;
+    padding-right:100px;
+  }
   .customerComments {
     display: flex;
     flex-direction: row;
-      margin: 50px 0;
+      margin-top: 50px;
 
     .commentDate {
       font-weight: 500;
@@ -333,6 +388,9 @@
     
   }
 
+  .blogForm {
+    padding-bottom: 50px;
+  }
 
   textarea {
       background-color: $primaryColor;
@@ -373,6 +431,17 @@
 .contactSection {
   display: flex;
   flex-direction: row;
+
+
+  @include mq-tablet {
+    flex-direction: column-reverse;
+    align-items: center;
+    
+    .formContact {
+      position: static;
+    }
+  }
+
   ul {
     display: flex;
     justify-content: space-between;
@@ -389,6 +458,8 @@
   .contactEmail {
     padding: 20px 0;
   }
+
+
 
 }
 

@@ -25,6 +25,20 @@
   height: 90vh;
   min-height: 600px;
   margin: 0 auto;
+  @include mq-sml-laptop {
+    h1 {
+      font-size: 5rem;
+    }
+    .headerTitle span {
+      padding-top: 15px;
+    }
+    background-position: 30%;
+  }
+  @include mq-tablet {
+    img {
+      display: none;
+    }
+  }
 }
 
 .headerTitle {

@@ -226,6 +226,12 @@ h2, h3 {
   letter-spacing: 1.3px;
 }
 
+@media (max-width: 940px) {
+  h2, h3 {
+    font-size: 1.7rem;
+  }
+}
+
 h1 {
   font-weight: 400;
   letter-spacing: 1px;
@@ -289,6 +295,24 @@ h1 {
   height: 90vh;
   min-height: 600px;
   margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .headerContent {
+    background-position: 30%;
+  }
+  .headerContent h1 {
+    font-size: 5rem;
+  }
+  .headerContent .headerTitle span {
+    padding-top: 15px;
+  }
+}
+
+@media (max-width: 940px) {
+  .headerContent img {
+    display: none;
+  }
 }
 
 .headerTitle {
@@ -385,6 +409,12 @@ h2, h3 {
   font-weight: 400;
   font-size: 2.25rem;
   letter-spacing: 1.3px;
+}
+
+@media (max-width: 940px) {
+  h2, h3 {
+    font-size: 1.7rem;
+  }
 }
 
 h1 {
@@ -510,14 +540,26 @@ h1 {
           box-shadow: 20px 20px #FFD300;
 }
 
+@media (max-width: 940px) {
+  .leftTing {
+    top: 0;
+  }
+}
+
 .trySomethingNew {
   margin-left: 10%;
   margin-top: 50px;
   text-align: right;
 }
 
+@media (max-width: 940px) {
+  .trySomethingNew {
+    text-align: left;
+  }
+}
+
 .trySomethingNew h2, .bestBurgersText h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin: 0;
   line-height: 58px;
 }
@@ -555,6 +597,13 @@ h1 {
 .bestBurgersText {
   margin-right: 15%;
   margin-top: 80px;
+}
+
+@media (max-width: 940px) {
+  .bestBurgersText {
+    margin-top: 20px;
+    margin-right: 5%;
+  }
 }
 
 .rightTing {
@@ -624,6 +673,12 @@ h1 {
   max-width: 305px;
 }
 
+@media (max-width: 940px) {
+  .natureContainer img {
+    height: 200px;
+  }
+}
+
 .natureText {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -684,7 +739,20 @@ h1 {
   width: 100%;
   max-width: 1600px;
   margin: 0 auto;
-  padding-top: 150px;
+}
+
+@media (max-width: 940px) {
+  .blogFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blogFlex .employmentText, .blogFlex .testimonialSec, .blogFlex .blogForm {
+    max-width: 80%;
+    margin: 0 auto 50px auto;
+    padding: 0;
+  }
 }
 
 .blogmainFlex .blogSubHead {
@@ -717,6 +785,31 @@ h1 {
 
 .blogmainFlex aside {
   width: 30%;
+  padding-top: 150px;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 940px) {
+  .blogmainFlex aside {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .blogmainFlex aside .blogSubHead {
+    margin: 0;
+    text-align: center;
+  }
+  .blogmainFlex aside .blogSubHead li {
+    list-style: none;
+  }
 }
 
 .blogmainFlex aside img {
@@ -731,6 +824,15 @@ h1 {
           box-shadow: 20px 0px #171B0E;
 }
 
+.blogmainFlex aside .blogSubHead h3 {
+  margin: 10px  0;
+}
+
+.blogmainFlex aside .blogSubHead a {
+  font-family: 'Barlow', sans-serif;
+  text-align: left;
+}
+
 .employmentRight {
   width: calc(70% - 110px);
   margin-left: 110px;
@@ -742,13 +844,24 @@ h1 {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
-  padding: 400px 60px 60px 60px;
+}
+
+@media (max-width: 940px) {
+  .employmentRight {
+    width: 100%;
+    margin: 0;
+  }
+  .employmentRight .blogImage img {
+    height: 50vw;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 
 .employmentRight .blogImage {
-  position: absolute;
+  position: relative;
   margin-bottom: 5%;
-  top: -300px;
+  top: -100px;
   right: 0;
 }
 
@@ -763,7 +876,7 @@ h1 {
   -webkit-box-shadow: 10px 10px #FFD300;
           box-shadow: 10px 10px #FFD300;
   padding: 0 50px 100px 0;
-  margin-bottom: 100px;
+  margin: 0 60px 100px 60px;
 }
 
 .employmentText h2 {
@@ -778,6 +891,11 @@ h1 {
   margin: 20px 0;
 }
 
+.testimonialSec, .blogForm {
+  margin: 50px 0 0 60px;
+  padding-right: 100px;
+}
+
 .customerComments {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -786,7 +904,7 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin: 50px 0;
+  margin-top: 50px;
 }
 
 .customerComments .commentDate {
@@ -830,6 +948,10 @@ h1 {
   background-color: #2B331B;
 }
 
+.blogForm {
+  padding-bottom: 50px;
+}
+
 textarea {
   background-color: #2B331B;
   border: solid 2px #FFD300;
@@ -867,6 +989,21 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+
+@media (max-width: 940px) {
+  .contactSection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contactSection .formContact {
+    position: static;
+  }
 }
 
 .contactSection ul {

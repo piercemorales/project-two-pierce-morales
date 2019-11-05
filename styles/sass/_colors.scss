@@ -3,3 +3,14 @@ $secondaryColor: #171B0E;
 $shadowColor: #FFD300;
 $innertextColor: #0f0f0f;
 
+@mixin mq-sml-laptop {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+@mixin mq-tablet {
+  @media (max-width: 940px) {
+    @content; 
+  }
+  
+}
