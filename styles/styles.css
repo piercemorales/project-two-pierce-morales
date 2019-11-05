@@ -320,9 +320,10 @@ h1 {
     background-position: 20%;
   }
   .headerContent h1 {
-    font-size: 3rem;
-    top: -50px;
+    font-size: 3.2rem;
+    top: 0px;
     position: relative;
+    min-height: 400px;
   }
 }
 
@@ -718,6 +719,13 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 751px) {
+  .giveContainer {
+    margin: 0 auto;
+    max-width: 90%;
+  }
 }
 
 .giveContainer h2 {
@@ -1185,6 +1193,12 @@ button {
 .contactBG .headerTitle {
   width: 100%;
   left: 0;
+}
+
+@media (max-width: 751px) {
+  .contactBG .headerTitle {
+    left: -25px;
+  }
 }
 
 .contactSection {
