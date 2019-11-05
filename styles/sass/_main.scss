@@ -317,8 +317,9 @@
       margin:0 auto 50px auto;
       padding:0;
     }
-
   }
+
+  
 }
 .blogmainFlex {
   
@@ -365,8 +366,15 @@
     li {
       list-style: none;
     }
-
     }
+
+  @include mq-mobile {
+    margin-bottom: 0px;
+  }
+
+
+
+
   }
     
 

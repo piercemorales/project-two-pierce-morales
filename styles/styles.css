@@ -377,6 +377,12 @@ header img {
   z-index: 0;
 }
 
+@media (max-width: 751px) {
+  .blogBG {
+    background-position: 30%;
+  }
+}
+
 body {
   font-size: 125%;
 }
@@ -973,6 +979,12 @@ h1 {
   }
   .blogmainFlex aside .blogSubHead li {
     list-style: none;
+  }
+}
+
+@media (max-width: 940px) and (max-width: 751px) {
+  .blogmainFlex aside {
+    margin-bottom: 0px;
   }
 }
 

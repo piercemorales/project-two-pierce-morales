@@ -93,3 +93,9 @@ header img {
   bottom: -100px;
  z-index: 0;
 }
+
+.blogBG {
+  @include mq-mobile {
+    background-position: 30%;
+  }
+}
