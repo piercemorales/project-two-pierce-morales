@@ -38,8 +38,8 @@
         background-color: $shadowColor;
         color: $innertextColor;
         margin-right: 20px;
-        padding: 10px;
-        height: 40px;
+        padding: 15px;
+        height: 50px;
         border-radius: 50%;
       }
       p {
@@ -511,9 +511,15 @@
     
   }
 
+ 
   .blogForm {
     padding-bottom: 50px;
   }
+
+ input::placeholder, textarea::placeholder {
+    opacity: 1;
+  }
+
 
   textarea {
       background-color: $primaryColor;
@@ -524,7 +530,6 @@
       width: 100%;
       padding: 20px;
       margin-bottom: 20px;
-      
     }
 
     button {
@@ -647,3 +652,39 @@
   }
 }
 
+
+
+
+// ATTEMPT AT HAMBURGER ICON
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// I DID THIS SECTION VERY ODDLY BUT I MANAGED FOR IT TO WORK THE FIRST TIME HOWEVER I CHEATED AND I DIDN'T HAVE TIME TO FIGURE OUT THE OTHER WAY TO FIXI T
+.hiddenMenu {
+  display: none;
+  @include mq-mobile {
+    display: block;
+  }
+}
+
+.visibleMenu {
+  @include mq-mobile {
+    display: none;
+  }
+}

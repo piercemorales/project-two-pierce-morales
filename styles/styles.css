@@ -363,10 +363,21 @@ h1 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 50px 0 100px 0;
+  max-width: 500px;
 }
 
 .headerNav ul li {
   padding: 10px;
+}
+
+.headerNav ul a {
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.headerNav ul a:hover {
+  -webkit-box-shadow: 0px 3px #FFD300;
+          box-shadow: 0px 3px #FFD300;
 }
 
 header img {
@@ -536,8 +547,8 @@ h1 {
   background-color: #FFD300;
   color: #0f0f0f;
   margin-right: 20px;
-  padding: 10px;
-  height: 40px;
+  padding: 15px;
+  height: 50px;
   border-radius: 50%;
 }
 
@@ -1179,6 +1190,22 @@ h1 {
   padding-bottom: 50px;
 }
 
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  opacity: 1;
+}
+
+input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+  opacity: 1;
+}
+
+input::placeholder, textarea::placeholder {
+  opacity: 1;
+}
+
 textarea {
   background-color: #2B331B;
   border: solid 2px #FFD300;
@@ -1348,6 +1375,22 @@ button {
 
 .formContact input, .formContact textarea {
   background-color: #171B0E;
+}
+
+.hiddenMenu {
+  display: none;
+}
+
+@media (max-width: 751px) {
+  .hiddenMenu {
+    display: block;
+  }
+}
+
+@media (max-width: 751px) {
+  .visibleMenu {
+    display: none;
+  }
 }
 
 .footerText {
