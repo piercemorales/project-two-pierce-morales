@@ -267,6 +267,7 @@
     width: 100%;
     display: flex;
     flex-direction: row;
+    padding-top: 50px;
     order: 2;
     .blogSubHead {
       margin: 0;
@@ -436,10 +437,21 @@
   @include mq-tablet {
     flex-direction: column-reverse;
     align-items: center;
-    
+
     .formContact {
+      margin-top: 50px;
       position: static;
+      width: 100%;
     }
+
+    .contactInfo {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      align-items: center;
+      margin-bottom: 50px;
+    }
+
   }
 
   ul {
