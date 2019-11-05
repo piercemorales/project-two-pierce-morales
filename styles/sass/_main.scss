@@ -11,14 +11,17 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: center;
+  
   @include mq-mobile {
     flex-direction: column;
     justify-content: space-evenly;
     margin-top: 100px;
+    
     .generalInfoText {
       width: 100%;
       p {
         max-width: 100%;
+
       }
     }
   }
@@ -59,17 +62,22 @@
   padding-bottom: 50px;
   @include mq-mobile {
     flex-direction: column;
-    .menuOptionright {
-    order: 2
+    justify-content: center;
+    text-align: center;
+
+    .trySomethingNew {
+    text-align: center;
+
     }
-    .leftTing {
-      order
-    }
+
+    
   }
 
 }
 .menuOption {
   display: flex;
+  
+  
 }
 // LEFT SECTION BURGURRRRRSSS
 
@@ -78,6 +86,8 @@
   box-shadow: 20px 20px $shadowColor;
   @include mq-tablet {
     top: 0;
+    box-shadow: 0px 20px 0px -10px $shadowColor;
+    
   }
 }
 
@@ -88,11 +98,17 @@
   @include mq-tablet {
     text-align: left;
   }
+  @include mq-mobile {
+    margin:  0;
+  }
  
 }
 
 .trySomethingNew, .bestBurgersText {
-  
+  @include mq-mobile {
+    max-width: 90%;
+    margin: 20px auto;
+  }
   h2 {
     font-size: 2rem;
     margin:0;
@@ -117,15 +133,25 @@
   width: 100%;
   position: relative;
   object-fit: cover;
+  @include mq-mobile {
+    height: 60vw;
+  }
 }
 
 // TRY SOMETHING NEWWWW SECTION BEGINS BOTTOM SIDE
 
 .menuOptionright, .menuOptionleft {
   width: 45%;
+  @include mq-mobile {
+    width: 100%;
+  }
 }
 .menuOptionright {
   align-items: flex-start;
+  @include mq-mobile {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 .bestBurgersText {
   margin-right: 15%;
@@ -139,7 +165,10 @@
 .rightTing {
   top: 100px;
   box-shadow: -20px 20px $shadowColor;
-
+  @include mq-mobile {
+    top: 0;
+    box-shadow: 0px 20px 0px -10px $shadowColor;
+  }
 }
 
 .giveContainer {
@@ -153,10 +182,16 @@
     letter-spacing: 1px;
     font-size: 2.25rem;
     line-height: 4.5rem;
+    @include mq-mobile {
+      text-align: center;
+    }
   }
   p {
     line-height: 2rem;
     max-width: 70%;
+    @include mq-mobile {
+      max-width: 90%;
+    }
   }
   a {
     margin: 20px;
@@ -182,22 +217,29 @@
   @include mq-mobile {
       flex-direction: column;
       max-width: 90%;
-      img {
 
+      h2 {
+        text-align: center;
+      }
+
+      a {
+        margin: 0 auto;
       }
   } 
   img {
       box-shadow: -15px 15px 0px 5px $shadowColor;
       margin-right: 30px;
-
       height: 300px;
       max-width: 305px;
       @include mq-tablet{
         height: 200px;
+        
       }
       @include mq-mobile {
       height: 100%;
       margin: 0 auto 50px auto;
+          box-shadow: 0px 20px 0px -10px $shadowColor;
+
 
       }
     }
@@ -327,6 +369,9 @@
       width: 100%;
       display: block;
       box-shadow: 40px 20px 0 -20px $secondaryColor;
+      @include mq-mobile {
+        display: none;
+      }
 
     }
 
@@ -367,6 +412,10 @@
         width: 100%;
         display: block;
       box-shadow: -10px 10px $shadowColor;
+      @include mq-mobile {
+    box-shadow: 0px 20px 0px -10px $shadowColor;
+
+      }
       }
     }
   }
@@ -375,6 +424,11 @@
       box-shadow: 10px 10px $shadowColor;
       padding: 0 50px 100px 0;
       margin: 0 60px 100px 60px;
+      @include mq-mobile {
+    box-shadow: 0px 20px 0px -10px $shadowColor;
+    text-align: center;
+
+      }
 
     h2 {
       color: $shadowColor;
@@ -397,6 +451,11 @@
     flex-direction: row;
       margin-top: 50px;
 
+      @include mq-mobile {
+        flex-direction:  column;
+        align-items: center;
+      }
+
     .commentDate {
       font-weight: 500;
       color: $shadowColor;
@@ -413,6 +472,9 @@
   .userInput {
     display: flex;
     justify-content: space-between;
+    @include mq-mobile {
+      flex-direction: column;
+    }
     input:nth-of-type(1) {
       margin-left: 0;
     }
@@ -427,6 +489,10 @@
       border: none;
       border-bottom: 2px solid $shadowColor;
       background-color: $primaryColor; 
+      @include mq-mobile {
+        margin: 0 auto 20px 0;
+      width: 100%;
+    }
   }
     
   }
@@ -444,6 +510,7 @@
       width: 100%;
       padding: 20px;
       margin-bottom: 20px;
+      
     }
 
     button {
@@ -474,7 +541,10 @@
 .contactSection {
   display: flex;
   flex-direction: row;
-
+  @include mq-mobile {
+  max-width: 100%;
+  width: 100%;
+  }
 
   @include mq-tablet {
     flex-direction: column-reverse;
@@ -484,6 +554,7 @@
       margin-top: 50px;
       position: static;
       width: 100%;
+    
     }
 
     .contactInfo {
@@ -492,17 +563,37 @@
       width: 100%;
       align-items: center;
       margin-bottom: 50px;
+      @include mq-mobile {
+        flex-direction:  column;
+        justify-content: center;
+
+      }
     }
 
   }
-
+  @include mq-mobile {
+    .formContact {
+    box-shadow: 0px 20px 0px -10px $shadowColor;
+    width: 100%;
+    padding: 20px;
+    }
+  }
   ul {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     width: 50%;
+    @include mq-mobile {
+      justify-content: center;
+      align-content: center;
+      width: 100%;
+    }
+    
     li {
       margin-right: 20px;
+      @include mq-mobile {
+        margin: 20px;
+      }
       a {
       color: $shadowColor;
 
@@ -520,6 +611,9 @@
 .contactInfo {
   margin-top: 100px;
   width:30%;
+  @include mq-mobile {
+    text-align: center;
+  }
 }
 
 .formContact {
