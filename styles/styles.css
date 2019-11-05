@@ -1051,6 +1051,8 @@ h1 {
   .employmentText {
     -webkit-box-shadow: 0px 20px 0px -10px #FFD300;
             box-shadow: 0px 20px 0px -10px #FFD300;
+  }
+  .employmentText h2 {
     text-align: center;
   }
 }
