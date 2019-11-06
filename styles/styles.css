@@ -476,6 +476,14 @@ header img {
   display: none;
 }
 
+.skiplink {
+  position: absolute;
+  left: -1000px;
+  top: 20px;
+  z-index: 100;
+  color: #fff;
+}
+
 body {
   font-size: 125%;
 }
