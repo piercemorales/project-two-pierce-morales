@@ -343,7 +343,7 @@ h1 {
   }
   .headerContent h1 {
     font-size: 2.9rem;
-    top: 0px;
+    top: 150px;
     position: relative;
   }
 }
@@ -412,6 +412,78 @@ header img {
   .blogBG {
     background-position: 30%;
   }
+}
+
+@media (max-width: 751px) {
+  .navMenu li {
+    right: 0;
+    margin: 0;
+    display: none;
+  }
+  .navMenu {
+    width: 100%;
+    border-radius: 15px;
+  }
+  .headerNav {
+    width: 60%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+  }
+  .headerNav ul {
+    text-align: center;
+    position: fixed;
+    right: 80px;
+    top: -10px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    z-index: 1;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  .headerNav a {
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .headerNav a:hover {
+    background: none;
+  }
+  .headerNav label {
+    display: block;
+    cursor: pointer;
+    z-index: 2;
+  }
+  #toggle:checked + .navMenu li {
+    display: block;
+  }
+}
+
+.hamIcon {
+  position: fixed;
+  color: black;
+  background-color: white;
+  padding: 15px 15px 10px 15px;
+  right: 30px;
+  top: 30px;
+  z-index: 1;
+  font-size: 2rem;
+  display: none;
+  border-radius: 10px;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.hamIcon:hover {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+#toggle {
+  display: none;
 }
 
 body {
