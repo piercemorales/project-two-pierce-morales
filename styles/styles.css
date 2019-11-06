@@ -437,7 +437,7 @@ header img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(15, 15, 15, 0.4);
     z-index: 30;
     margin: 0 auto;
     max-width: 100%;
@@ -455,8 +455,8 @@ header img {
 
 .hamIcon {
   position: fixed;
-  color: black;
-  background-color: white;
+  color: #0F0F0F;
+  background-color: #fff;
   padding: 15px 15px 10px 15px;
   right: 30px;
   top: 30px;

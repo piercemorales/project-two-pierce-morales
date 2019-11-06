@@ -127,7 +127,7 @@ header img {
       text-align: center;
       position: fixed;
       flex-direction: column;
-      background: rgba($color: black, $alpha: 0.4);
+      background: rgba($color: #0F0F0F, $alpha: 0.4);
       z-index: 30;
       margin: 0 auto;
       max-width: 100%;
@@ -148,8 +148,8 @@ header img {
  
   .hamIcon {
     position: fixed;
-    color: black;
-    background-color: white;
+    color: #0F0F0F;
+    background-color: #fff;
     padding: 15px 15px 10px 15px;
     right: 30px;
     top: 30px;
@@ -159,7 +159,7 @@ header img {
     border-radius: 10px; 
     transition: 0.2s ease-in-out;
     &:hover {
-      background: rgba($color: white, $alpha: 0.7)
+      background: rgba($color: #fff, $alpha: 0.7)
     }
   }
 
