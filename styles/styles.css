@@ -416,47 +416,37 @@ header img {
 
 @media (max-width: 751px) {
   .navMenu li {
-    right: 0;
-    margin: 0;
+    margin: 0 auto;
     display: none;
+    width: 100%;
   }
   .navMenu {
     width: 100%;
-    border-radius: 15px;
   }
   .headerNav {
-    width: 60%;
+    width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 0;
   }
   .headerNav ul {
     text-align: center;
     position: fixed;
-    right: 80px;
-    top: -10px;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    z-index: 1;
-    -webkit-transition: 0.2s;
-    transition: 0.2s;
-  }
-  .headerNav a {
-    background-color: black;
-    padding: 10px;
-    border-radius: 10px;
-  }
-  .headerNav a:hover {
-    background: none;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 30;
+    margin: 0 auto;
+    max-width: 100%;
+    left: 0;
   }
   .headerNav label {
     display: block;
     cursor: pointer;
-    z-index: 2;
+    z-index: 31;
   }
   #toggle:checked + .navMenu li {
     display: block;
@@ -479,7 +469,7 @@ header img {
 }
 
 .hamIcon:hover {
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.7);
 }
 
 #toggle {

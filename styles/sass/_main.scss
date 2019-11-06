@@ -21,7 +21,6 @@
       width: 100%;
       p {
         max-width: 100%;
-
       }
     }
   }
@@ -67,17 +66,12 @@
 
     .trySomethingNew {
     text-align: center;
-
     }
-
-    
   }
 
 }
 .menuOption {
   display: flex;
-  
-  
 }
 // LEFT SECTION BURGURRRRRSSS
 
@@ -101,7 +95,6 @@
   @include mq-mobile {
     margin:  0;
   }
- 
 }
 
 .trySomethingNew, .bestBurgersText {
