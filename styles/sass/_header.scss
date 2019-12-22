@@ -1,6 +1,3 @@
-@import "colors";
-
-
 .mainBG {
   background-image: url(../images/home-header.jpg);
 }
@@ -12,7 +9,6 @@
 
 .contactBG {
   background-image: url(../images/contact-header.jpg);
-
 }
 
 .headerContent {
@@ -46,7 +42,6 @@
     font-size: 2.9rem;
     top:150px;
     position: relative;
-    
     }
   }
 }
@@ -95,8 +90,8 @@ header img {
   right: 0; 
   width: 50%;
   bottom: -100px;
- z-index: 0;
- max-width: 1300px;
+  z-index: 0;
+  max-width: 1300px;
 }
 
 .blogBG {
@@ -104,16 +99,13 @@ header img {
     background-position: 30%;
   }
 }
-// hamburger icon
 
 @include mq-mobile {
-
   .navMenu li{
     margin: 0 auto;
     display: none;
     width: 100%;
   }
-
   .navMenu {
       width: 100%;
   }
@@ -143,7 +135,6 @@ header img {
     display: block;
   }
 }
- 
   .hamIcon {
     position: fixed;
     color: #0F0F0F;
@@ -160,7 +151,6 @@ header img {
       background: rgba($color: #fff, $alpha: 0.7)
     }
   }
-
 
 #toggle {
   display: none;
