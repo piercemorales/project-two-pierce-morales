@@ -391,7 +391,7 @@ h1 {
   transition: 0.2s ease-in-out;
 }
 
-.headerNav ul a:hover {
+.headerNav ul a:hover, .headerNav ul a:focus {
   -webkit-box-shadow: 0px 3px #FFD300;
           box-shadow: 0px 3px #FFD300;
 }
